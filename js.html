@@ -5,7 +5,29 @@
     <title>Title</title>
 </head>
 <body>
+<!--<h1>Bài 1</h1>-->
+<!--<h2>tính diện tích</h2>-->
+<!--<input type="text" id="st1">-->
+<!--<input type="text" id="st2">-->
+<!--<button onclick="tinh01()">Tính</button>-->
+<!--<h1 id="kq">-->
+<!--</h1>-->
+<br>
+<h2>tính diện tích và chu vi </h2>
+<input type="text" id="st1">
+<input type="text" id="st2">
+<button onclick="tinh01()">Tính</button>
+<h1 id="kq">
+</h1>
+
 <script>
+    function tinh01() {
+        let a =+document.getElementById('st1').value;
+        let b =+ document.getElementById('st2').value;
+        document.getElementById('kq').innerHTML=' dien tich la '+ a*a *3,1416+ '       chu vi là '+2*a *3,1416;
+
+    }
+
     //hinh chu nhat
 // alert(' tinh chu vi và  s hinh chu nhat')
 //     let a = +prompt('nhap   chieu dai')
@@ -13,10 +35,10 @@
 //     alert( 'chu vi la '+ (a+b)*2)
 //     alert( ' dien tich la '+ a*b)
 // chu vi và s  hinh tron
-alert(' tinính  s hinh hinh tron')
-let a = +prompt('nhap ban kinh')
-     alert( 'chu vi la'+2*a *3,1416)
-     alert( ' dien tich '+ a*a *3,1416)
+// alert(' tinính  s hinh hinh tron')
+// let a = +prompt('nhap ban kinh')
+//      alert( 'chu vi la'+2*a *3,1416)
+//      alert( ' dien tich '+ a*a *3,1416)
     // đổi đ c sang độ f
   // alert(' doi dodooj C ==> F')
   //   let a = +prompt('nhap C')
@@ -29,6 +51,8 @@ let a = +prompt('nhap ban kinh')
 //     alert('điểm tổng'+(a+b+c))
 //     alert('điểm trung bình là'+(a+b+c)/3)
 </script>
+<h2></h2>
+
 </div>
 </body>
 </html>
