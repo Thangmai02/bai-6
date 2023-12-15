@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>maytinh</title>
+
+</head>
+<style>
+
+</style>
+<body>
+<table border="1">
+    <tr>
+        <td style="background: aquamarine" ><input type="text" id="display" disabled></td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" value="7" onclick="Hienthi('7')">
+            <input type="button" value="8" onclick="Hienthi('8')">
+            <input type="button" value="9" onclick="Hienthi('9')">
+            <input type="button" value="/" onclick="Hienthi('/')">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" value="4" onclick="Hienthi('4')">
+            <input type="button" value="5" onclick="Hienthi('5')">
+            <input type="button" value="6" onclick="Hienthi('6')">
+            <input type="button" value="-" onclick="Hienthi('-')">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" value="1" onclick="Hienthi('1')">
+            <input type="button" value="2" onclick="Hienthi('2')">
+            <input type="button" value="3" onclick="Hienthi('3')">
+            <input type="button" value="+" onclick="Hienthi('+')">
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="button" value="0" onclick="Hienthi('0')">
+            <input type="button" value="." onclick="Hienthi('.')">
+            <input type="button" value="*" onclick="Hienthi('*')">
+            <input type="button" value="C" onclick="Xoa()">
+        </td>
+    </tr>
+    <tr>
+        <td><input type="button" value="=" onclick="tinh()"></td>
+    </tr>
+</table>
+<script>
+    function Hienthi(value) {
+        document.getElementById("display").value += value;
+    }
+
+    function Xoa() {
+        document.getElementById("display").value = '';
+    }
+
+    function tinh() {
+        try {
+            document.getElementById("display").value = eval(document.getElementById("display").value);
+        } catch (error) {
+            document.getElementById("display").value = 'Error';
+        }
+    }
+</script>
+</body>
+</html>
